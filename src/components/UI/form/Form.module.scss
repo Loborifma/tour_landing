@@ -1,0 +1,15 @@
+.form{
+    display: flex !important;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    .field{
+        width: 80%;
+        margin: .5em;
+    }
+
+    #multiline{
+        height: 115px !important;
+    }
+}

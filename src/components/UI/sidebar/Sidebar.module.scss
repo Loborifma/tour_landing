@@ -1,0 +1,24 @@
+.sidebar{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 1em;
+    transform: translate(0, -50%);
+
+    .vk,
+    .whatup,
+    .share{
+        width: 2.2em;
+        margin: 1em 0;
+        cursor: pointer;
+        transition: all .5s;
+
+        &:hover{
+            transition: all .5s;
+            transform: scale(.8);
+        }
+    }
+}

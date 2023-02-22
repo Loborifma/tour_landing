@@ -1,0 +1,55 @@
+.home_page{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h1,
+    h2{
+        color: white;
+        text-align: center;
+        font-size: 3em;
+        line-height: .4em;
+    }
+
+    h1{
+        letter-spacing: .04em;
+        word-spacing: .25em;
+    }
+
+    h2{
+        letter-spacing: - .03em;
+        word-spacing: .02em;
+    }
+
+    h4{
+        margin-top: 3em;
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: 100;
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 4em;
+
+        .choose,
+        .show_more{
+            border-radius: 3em;
+            color: #43A6A0;
+            border: 2px solid;
+            font-size: 1.2em;
+
+            &:hover{
+                transition: all .5s;
+                background: #43A6A0;
+                span{
+                    color: white;
+                }
+            }
+        }
+    }
+}

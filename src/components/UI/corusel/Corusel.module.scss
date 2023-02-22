@@ -1,0 +1,90 @@
+.container {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    perspective: 1000px;
+  }
+  
+.carousel {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   transform-style: preserve-3d; 
+   animation: rotate360 60s infinite forwards linear;
+
+  .carousel__face { 
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+    display: flex;
+    flex-flow: column nowrap;
+    transition: all .5s;
+    cursor: pointer;
+
+    .wrap_desc{
+        p {
+            text-align: center;
+            margin: 0 auto;
+            font-size: 2rem;
+            color: white;
+        }
+    }
+
+    h4{
+        text-align: center;
+        color: rgba($color: #ffffff, $alpha: .7);
+        font-weight: lighter;
+        font-size: .9em;
+    }
+
+    &:hover{
+        transition: all .5s;
+        box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.7);
+    }
+  }
+}
+  
+  
+  .carousel__face:nth-child(1) {
+    background-image: url("../../../assets/Bigger-Waterfall-Roménia-e1509638898182-ngu522axvj424t23d3i7lqd6v34lmxyu42lkm23a6k.jpg");
+    transform: rotateY(  0deg) translateZ(430px); }
+  .carousel__face:nth-child(2) { 
+    background-image: url("../../../assets/Fenda-do-Bimbe.jpg");
+      transform: rotateY( 40deg) translateZ(430px); }
+  .carousel__face:nth-child(3) {
+    background-image: url("../../../assets/1663809690_48-pibig-info-p-dikie-plyazhi-brazilii-priroda-krasivo-53.jpg");
+    transform: rotateY( 80deg) translateZ(430px); }
+  .carousel__face:nth-child(4) {
+    background-image: url("../../../assets/zima-ozero-sneg.jpg");
+    transform: rotateY(120deg) translateZ(430px); }
+  .carousel__face:nth-child(5) { 
+    background-image: url("../../../assets/1260px-Cattle_feeding_grass_agriculture.jpg");
+   transform: rotateY(160deg) translateZ(430px); }
+  .carousel__face:nth-child(6) { 
+    background-image: url("../../../assets/vag-klimatkrav1680x1000-1260x750.jpg");
+   transform: rotateY(200deg) translateZ(430px); }
+  .carousel__face:nth-child(7) { 
+    background-image: url("../../../assets/Urban-Insight-3-gronn-vegg-1260x750.jpg");
+   transform: rotateY(240deg) translateZ(430px); }
+  .carousel__face:nth-child(8) {
+    background-image: url("../../../assets/1663809690_48-pibig-info-p-dikie-plyazhi-brazilii-priroda-krasivo-53.jpg");
+    transform: rotateY(280deg) translateZ(430px); }
+  .carousel__face:nth-child(9) {
+    background-image: url("../../../assets/Fenda-do-Bimbe.jpg");
+    transform: rotateY(320deg) translateZ(430px); }
+  
+  
+  
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }

@@ -1,0 +1,63 @@
+.container{
+    display: flex !important;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .logo{
+        height: 50px;
+        width: 200px;
+        object-fit:cover;
+    }
+
+    .wrap_links{
+        width: 50%;
+
+        .links{
+            width: 40%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+    
+            a{
+                margin: 0 10px;
+                text-decoration: none;
+                font-size: 18px;
+                color: hsla(0, 0%, 100%, 0.5);
+                transition: all .5s;
+    
+                &:hover{
+                    transition: all .5s;
+                    color: hsla(0, 0%, 100%, 0.7);
+                }
+            }
+        }
+    }
+
+    .telephone{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: flex-end;
+
+        .icon{
+            color: white;
+        }
+
+        .tel_number{
+            color: white;
+            margin: 0;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: all .5s;
+
+            &:hover{
+                transition: all .5s;
+                transform: scale(.95);
+                color: #cadc2ac9;
+            }
+        }
+    }
+}
