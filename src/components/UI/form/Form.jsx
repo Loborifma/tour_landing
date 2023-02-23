@@ -1,9 +1,9 @@
-import { Container, TextField } from '@mui/material';
+import { Button, Container } from '@mui/material';
 import React from 'react';
 import cl from './Form.module.scss';
-import { styled, ThemeProvider } from '@mui/material/styles';
-import {theme} from '../../../utils/palette.js'
-import {CssTextField} from '../../../utils/custom_tf.js'
+import { ThemeProvider } from '@mui/material/styles';
+import { theme } from '../../../utils/palette.js';
+import { CssTextField } from '../../../utils/custom_tf.js';
  
 const Form = () => {
     return (
@@ -30,6 +30,11 @@ const Form = () => {
                     color='primary'
                     maxRows={5}
                 />
+                <div className={cl.button}>
+                    <Button className={cl.submit} variant='outlined'>
+                        <span>Оставить заявку</span>
+                    </Button>
+                </div>
             </ThemeProvider>
         </Container>
     );

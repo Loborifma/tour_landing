@@ -12,4 +12,26 @@
     #multiline{
         height: 115px !important;
     }
+
+    .button{
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+
+        .submit{
+            border-radius: 10px;
+            color: rgba(255, 255, 255, 0.5);
+            border: 2px solid;
+            font-size: 1.1em;
+    
+            span{
+                color: white;
+            }
+    
+            &:hover{
+                transition: all .5s;
+                background: rgba(255, 255, 255, 0.5); 
+            }
+        }
+    }
 }
